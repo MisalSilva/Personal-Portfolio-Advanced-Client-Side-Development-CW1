@@ -1,0 +1,11 @@
+#navlist li{
+    display: inline;
+    padding: 8px;                
+}
+#navlist {
+    text-align: right;
+}
+h3 {
+    /*text-align: center;*/
+    color: indigo;
+}
