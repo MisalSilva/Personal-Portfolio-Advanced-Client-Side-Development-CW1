@@ -1,7 +1,19 @@
 #navlist li{
     display: inline;
     padding: 8px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                   
+}
+.navlist li a:visited {
+    color: rgb(18, 174, 36);
+}
+.navlist li a.active {
+    color: #ffffff;
+    border-bottom: 4px solid;
+}
+.navlist li a:hover {
+    padding: 5px;
+    background-color: rgb(5, 205, 245)
 }
 #navlist #name{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
