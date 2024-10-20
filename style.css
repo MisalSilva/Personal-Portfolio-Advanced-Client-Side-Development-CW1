@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -16,18 +17,18 @@ header {
     align-items: center;
     z-index: 100;
 }
+
 .logo {
     font-size: 2.5em;
     color: #555;
     cursor: default;
 }
+
 .logo span {
-    color: #2ab2e8;
+    color: #07a096;
     font-size: 1.1em;
 }
-/* .navigation {
-    margin-left: -360px;
-} */
+
 .navigation a {
     font-size: 1.1em;
     color: #555;
@@ -36,95 +37,164 @@ header {
     font-weight: 500;
     transition: .3s;
 }
+
 .navigation a:hover {
-    color: #2ab2e8;
+    color: #07a096;
 }
+
 .chat-button {
     color: #fff;
     text-decoration: none;
     padding: 8px 35px;
-    background: #2ab2e8;
+    background: #07a096;
     border-radius: 10px;
-    border: 2px solid #2ab2e8;
+    border: 2px solid #07a096;
     font-weight: 500;
     transition: .3s;
 }
+
 .chat-button:hover {
-    color: #2ab2e8 ;
+    color: #07a096;
     background: transparent;
+    transform: translateY(-5px);
 }
-.home {
+
+#home {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* background: url('background.jpg'); */
+    display: flex;
+    justify-content: space-between; /* Ensures the content and image are spaced apart */
+    align-items: center;
+    padding: 30px 100px; /* Adjusted padding for better layout */
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 30px 200px;
 }
+
 .content {
-    max-width: 500px;
+    max-width: 50%; /* Adjust the width for layout */
     color: #555;
     font-weight: 450;
 }
+
 .content h2 {
     font-size: 3em;
+    transition: .3s;
 }
+
 .content h2 span {
-    color: #2ab2e8;
+    color: #07a096;
 }
+
+.content h2:hover {
+    transform: translateY(-5px);    
+}
+
 .content h4 {
     font-size: 2em;
 }
+
 .content p {
     padding: 20px 0 50px 0;
 }
+
 .cv-button a {
-    color: #2ab2e8;
+    color: #07a096;
     text-decoration: none;
     padding: 10px 40px;
     background: #fff;
     border-radius: 10px;
-    border: 2px solid #2ab2e8;
+    border: 2px solid #07a096;
     font-weight: 500;
     transition: .3s;
 }
+
 .cv-button a:hover {
     color: #fff;
-    background: #2ab2e8;
+    background: #07a096;
+    transform: translateX(-5px);
 }
-/* .btn-group a:nth-child(2) {
-    color: #7d2ae8;
-    background: transparent;
-    margin-left: 30px;
-    padding: 10px 30px;
-}
-.btn-group a:hover:nth-child(2) {
-    color: #fff;
-    background: #7d2ae8;
-} */
+
 .social-icons {
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
 }
+
 .social-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
-    background: #2ab2e8;
+    background: #07a096;
     border-radius: 50%;
     margin-right: 22px;
     text-align: center;
     line-height: 35px;
     border: 3px solid #fff;
-    outline: 3px solid #2ab2e8;
+    outline: 3px solid #07a096;
     transition: .3s;
 }
+
 .social-icons a:hover {
     transform: translateY(-5px);
 }
+
 .social-icons a i {
     color: #fff;
+}
+
+/* Image container for the home section */
+.image-container {
+    max-width: 40%; /* Adjust the width to suit your design */
+    height: 400px;  /* Fixed height to display only upper body */
+    overflow: hidden; /* Hide the rest of the image */
+    border-radius: 50%; /* Make the image circular (frame style) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for the frame effect */
+    padding: -200px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the frame */
+    object-position: top; /* Focus on the top portion of the image (upper body and face) */
+    border-radius: 50%; /* This keeps the circular shape within the container */
+}
+
+
+/* Projects Section */
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 100px; /* Adjusted padding for better spacing */
+    text-align: center;
+}
+
+#projects .content {
+    max-width: 600px;
+    color: #555;
+    font-weight: 450;
+}
+
+#projects .content h4 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#projects .content p {
+    padding: 20px 0 50px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    color: #555;
+}
+
+footer p {
+    margin: 0;
 }
