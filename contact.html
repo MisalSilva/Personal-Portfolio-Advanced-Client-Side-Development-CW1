@@ -18,5 +18,32 @@
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a href="#" class="chat-button">Let's Chat</a>
+            <a href="contact.html" class="chat-button">Let's Chat</a>
         </header>
+        <section id="contact">
+            <div class="content">
+                <h4>CONTACT ME</h4>
+                <p>Submit your details and message to get in touch with me.</p>
+                
+                <form id="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="send-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
