@@ -165,31 +165,87 @@ header {
 }
 
 
+
+
 /*about section*/
 
+    
+/* General Styling */
 #about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 100px; /* Adjusted padding for better spacing */
+    padding: 60px 0;
+    background-color: #fff;
+    color: #333;
     text-align: center;
 }
 
 #about .content {
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about h4 {
+    font-size: 2.5em;
+    color: #004974;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
     color: #555;
-    font-weight: 450;
+    margin-bottom: 40px;
+    line-height: 1.6;
 }
 
-#about .content h4 {
-    color: #004974 ;
-    font-size: 2em;
-    text-align: center;
+/* About Section Styling */
+.about-section {
+    margin-bottom: 40px;
 }
 
-#about .content p {
-    padding: 20px 0 50px 0;
+.about-section h5 {
+    font-size: 1.8em;
+    color: #004974;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
+
+/* Tile Styling */
+.tile {
+    background-color: #c0e0f9;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+.tile span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about .content {
+        padding: 0 10px;
+    }
+    .tile {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
 
 /* Skills section styling */
 #skills {
@@ -263,6 +319,10 @@ header {
         width: var(--progress-width);
     }
 }
+
+
+
+
 
 /* Projects section styling */
 #projects {
@@ -355,6 +415,9 @@ header {
 .github-link:hover {
     color: #004974;
 }
+
+
+
 
 
 
