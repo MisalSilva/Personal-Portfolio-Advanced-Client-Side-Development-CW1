@@ -6,6 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 header {
     position: fixed;
     top: 0;
@@ -172,10 +177,11 @@ header {
     
 /* General Styling */
 #about {
-    padding: 60px 0;
+    padding: 90px;
     background-color: #fff;
     color: #333;
     text-align: center;
+    /* margin-top:auto; */
 }
 
 #about .content {
@@ -185,7 +191,7 @@ header {
 }
 
 #about h4 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #004974;
     margin-bottom: 20px;
 }
@@ -206,7 +212,6 @@ header {
     font-size: 1.8em;
     color: #004974;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 /* Tile Styling */
@@ -249,9 +254,9 @@ header {
 
 /* Skills section styling */
 #skills {
-    padding: 120px 0;
+    padding: 90px ;
     text-align: center;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -261,7 +266,7 @@ header {
 }
 
 #skills .content h4 {
-    font-size: 2em;
+    font-size: 2.3em;
     margin-bottom: 10px;
     color: #004974;
 }
@@ -420,7 +425,7 @@ header {
 
 /* General Styling for Contact Section */
 #contact {
-    padding: 60px 20px;
+    padding: 90px 20px;
     background-color: #f5f5f5;
     text-align: center;
     color: #333;
@@ -433,7 +438,7 @@ header {
 }
 
 #contact h4 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #004974;
     margin-bottom: 20px;
 }
