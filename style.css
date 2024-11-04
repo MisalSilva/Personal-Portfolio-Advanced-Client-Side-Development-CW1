@@ -468,14 +468,14 @@ header {
     font-size: 1em;
 }
 
- a[href="https://github.com/MisalSilva/w2053190_PlaneManagement"] {
-    color: #2cc917; /* Styling LinkedIn link */
+ a[href="https://github.com/MisalSilva/w2053190_PlaneManagement"] { /*  Attribute Selectors */
+    color: #2cc917; 
 }
- a[href="https://github.com/MisalSilva/Progress-Outcome-Predictor"] {
-    color: #f14747; /* Styling LinkedIn link */
+ a[href="https://github.com/MisalSilva/Progress-Outcome-Predictor"] { /*  Attribute Selectors */
+    color: #f14747; 
 }
- a[href="https://github.com/MisalSilva/MediHelp-Web-Application"] {
-    color: #dabb11; /* Styling LinkedIn link */
+ a[href="https://github.com/MisalSilva/MediHelp-Web-Application"] { /*  Attribute Selectors */
+    color: #dabb11; 
 }
 
 .github-link i {
