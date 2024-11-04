@@ -122,7 +122,7 @@ header {
     font-weight: 450;
 }
 
-.content h2 {
+.content > h2 { /* Child Combinator */
     font-size: 3em;
     transition: .3s; /* Smooth transitions */
 }
@@ -135,11 +135,11 @@ header {
     transform: translateY(-5px);
 }
 
-.content h4 {
+.content > h4 { /* Child Combinator */
     font-size: 2em;
 }
 
-.content p {
+.content > p { /* Child Combinator */
     padding: 20px 0 50px 0;
 }
 
@@ -261,7 +261,7 @@ header {
     margin-bottom: 40px;
 }
 
-.about-section h5 {
+.about-section > h5 { /* Child Combinator */
     font-size: 1.8em;
     color: #004974;
     margin-bottom: 20px;
@@ -427,7 +427,7 @@ header {
     transform: scale(1.05); /* transform stylings */
 }
 
-.project-card h5 {
+.project-card > h5 { /* Child Combinator */
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
