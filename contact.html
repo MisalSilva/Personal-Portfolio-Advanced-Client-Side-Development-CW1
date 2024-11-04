@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!--Navigation Bar of the Portfolio with the logo and nav bar-->
         <header>
             <h2 class="logo"><span>M</span>isal.</h2>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -21,11 +22,12 @@
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
+        <!--Contact Section of the Portfolio where user can enter their details and send a message-->
         <section id="contact">
             <div class="content">
                 <h4>CONTACT ME</h4>
                 <p>Submit your details and message to get in touch with me.</p>
-                
+                <!-- Form that need to  be submitted -->                
                 <form id="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -43,11 +45,13 @@
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
                     </div>
+                    <!-- button to submit the message -->
                     <button type="submit" class="send-button">Send Message</button>
                 </form>
             </div>
         </section>
-
+        
+        <!--Footer of the Portfolio page-->
         <footer>
             <p>&copy;2024 Misal Silva. All rights reserved.</p>
         </footer>
