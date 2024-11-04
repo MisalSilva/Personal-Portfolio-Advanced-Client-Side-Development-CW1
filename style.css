@@ -11,6 +11,15 @@ html {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -35,11 +44,15 @@ header {
     font-size: 1.1em;
 }
 
+.navigation {
+    display: flex;
+    gap: 35px;
+}
+
 .navigation a {
     font-size: 1.1em;
     color: #555;
     text-decoration: none;
-    margin-right: 35px;
     font-weight: 500;
     transition: .3s;
 }
@@ -63,6 +76,48 @@ header {
     color: #004974;
     background: transparent;
     transform: translateY(-5px);
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #004974;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #c0e0f9;
+        padding: 10px 0;
+    }
+
+    .menu-toggle:checked + .hamburger + .navigation {
+        display: flex;
+    }
+
+    .chat-button {
+        align-self: center;
+        margin-top: 10px;
+    }
 }
 
 #home {
