@@ -5,10 +5,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* Ensuring a smooth scrolling when scrolling throughout the page */
 html {
     scroll-behavior: smooth;
 }
-
+/* Header Styles*/
 header {
     position: fixed;
     top: 0;
@@ -21,23 +22,22 @@ header {
     z-index: 100;
     background: linear-gradient(45deg, #85c7fa, #e7eff5); /* Gradient Stylings*/
 }
-
+/* logo styles */
 .logo {
     font-size: 2.5em;
     color: #555;
     cursor: default;
 }
-
+/* logo span styles */
 .logo span {
     color: #004974;
     font-size: 1.1em;
 }
-
+/* nav bar styles */
 .navigation {
     display: flex;
     gap: 35px;
 }
-
 .navigation a {
     font-size: 1.1em;
     color: #555;
@@ -50,44 +50,36 @@ header {
     color: #004974;
     transform: translateX(-5px); /* transform stylings */
 }
-
-
-
 /* Hamburger Menu Styles */
 .menu-toggle {
     display: none;
 }
-
 .hamburger {
     display: none;
     font-size: 2em;
     cursor: pointer;
     color: #004974;
 }
-
+/* media quaries for making the header and nav bar responsive */
 @media (max-width: 768px) {
     header {
         padding: 10px 20px;
         flex-direction: column;
         align-items: flex-start;
     }
-
     .hamburger {
         display: flex;
         position: absolute;
         padding-left: 380px;
         padding-top: 17px;        
     }
-
     .content h2{
         padding-top: 80px;
     }
-
     .social-icons{
         padding-top: 25px;
         padding-left: 20px;
     }
-
     .navigation {
         display: none;
         flex-direction: column;
@@ -96,13 +88,14 @@ header {
         background-color: #c0e0f9;
         padding: 10px 0;
     }
-
     .menu-toggle:checked + .hamburger + .navigation {
         display: flex;
-    }
-    
+    }    
 }
 
+
+
+/* home section styles */
 #home {
     position: relative;
     width: 100%;
@@ -112,16 +105,14 @@ header {
     align-items: center;
     padding: 30px 100px;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
-
+/* styles for content class of home section */
 .content {
     max-width: 50%;
     color: #555;
     font-weight: 450;
 }
-
 .content > h2 { /* Child Combinator */
     font-size: 3em;
     transition: .3s; /* Smooth transitions */
@@ -131,25 +122,21 @@ header {
 .content h2 span {
     color: #004974;
 }
-
 .content h2::after { /* Pseudo Elements with Generated Content */
-    content: "👋" ;/* Adds an icon after the heading */
+    content: "👋" ;
     color: #004974;
 }
-
 .content h2:hover { /* User Action Pseudo Class - based on user action */
     transform: translateY(-5px);
 }
-
 .content > h4 { /* Child Combinator */
     font-size: 2em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Text Shadows */
 }
-
 .content > p { /* Child Combinator */
     padding: 20px 0 50px 0;
 }
-
+/* cv button styles */
 .cv-button a {
     color: #004974;
     text-decoration: none; /* Text Effects */
@@ -166,13 +153,12 @@ header {
     background: #004974;
     transform: translateX(-5px); /* transform stylings */
 }
-
+/* social media icons styles */
 .social-icons {
     padding-top: 25px;
-    position: relative; /* Changed from absolute to relative */
-    margin-top: 20px; /* Added margin for spacing */
+    position: relative; 
+    margin-top: 20px; 
 }
-
 .social-icons a {
     display: inline-block;
     width: 35px;
@@ -190,12 +176,10 @@ header {
 .social-icons a:hover { /* User Action Pseudo Class - based on user action */
     transform: translateY(-5px); /* transform stylings */
 }
-
 .social-icons a i {
     color: #fff;
 }
-
-/* Image container for the home section */
+/* styles for Image container class of home section */
 .image-container {
     max-width: 40%;
     height: 400px;
@@ -207,7 +191,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Added margin for spacing */
 }
-
 .image-container img {
     width: 100%;
     height: 100%;
@@ -216,64 +199,55 @@ header {
     border-radius: 50%;
 }
 
-/* Responsive Styles */
+/* Styles to make home section responsive */
 @media (max-width: 768px) {
     #home {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center items */
-        padding: 30px 20px; /* Adjust padding for smaller screens */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 30px 20px; 
     }
-
     .content {
-        max-width: 100%; /* Make content take full width */
-        text-align: center; /* Center text */
+        max-width: 100%; 
+        text-align: center; 
     }
-
     .image-container {
-        max-width: 60%; /* Adjust image size for better fit */
+        max-width: 60%;
     }
 }
 
 
-/*about section*/
-
+/*About section styles*/
 #about {
     padding: 90px;
     background-color: #fff;
     color: #333;
     text-align: center;
-    /* margin-top:auto; */
 }
-
 #about .content {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 #about h4 {
     font-size: 2em;
     color: #004974;
     margin-bottom: 20px;
 }
-
 #about p {
     font-size: 1.1em;
     color: #555;
     margin-bottom: 40px;
     line-height: 1.6;
 }
-
 .about-section {
     margin-bottom: 40px;
 }
-
 .about-section > h5 { /* Child Combinator */
     font-size: 1.8em;
     color: #004974;
     margin-bottom: 20px;
 }
-
+/* styles for tile class of about section */
 .tile {
     background-color: #c0e0f9;
     color: #333;
@@ -284,7 +258,6 @@ header {
     transition: transform 0.3s ease; /* Smooth transitions */
     font-size: 1.1em;
 }
-
 .tile span {
     display: block;
     margin-top: 8px;
@@ -296,7 +269,7 @@ header {
     transform: scale(1.05); /* transform stylings */
 }
 
-/* Responsive Design */
+/* Styles to make about section responsive */
 @media (max-width: 768px) {
     #about .content {
         padding: 0 10px;
@@ -307,7 +280,7 @@ header {
 }
 
 
-/* Skills section styling */
+/* Skills section styles */
 #skills {
     padding: 90px ;
     text-align: center;
@@ -316,7 +289,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
 #skills .content{
     padding-top: 8px;
 }
@@ -333,16 +305,14 @@ header {
     margin-bottom: 30px;
     max-width: 600px;
 }
-
-/* Styling for the skills container and skill items */
+/* Styling for the skills container class */
 .skills-container {
     max-width: 800px;
-    width: 100%; /* Make sure the skills container takes full width */
+    width: 100%; 
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 .skill {
     display: flex;
     align-items: center;
@@ -350,8 +320,7 @@ header {
     font-size: 1.1em;
     color: #333;
 }
-
-/* Styling for the progress bar */
+/* Styles for the progress bar */
 .progress-bar {
     background-color: #c0e0f9;
     border-radius: 5px; /* Slightly rounded corners */
@@ -361,16 +330,14 @@ header {
     overflow: hidden;
     position: relative;
 }
-
 .progress {
     background-color: #004974;
     height: 100%;
     border-radius: 5px; /* Slightly rounded corners */
-    width: 0; /* Initial width for animation */
+    width: 0; 
     transition: width 0.3s ease; /* Smooth transitions */
     animation: fillProgress 2s forwards; /* Animation keyframes for progress bar */
 }
-
 /* Animation keyframes for progress bar */
 @keyframes fillProgress {
     from {
@@ -382,10 +349,7 @@ header {
 }
 
 
-
-
-
-/* Projects section styling */
+/* Projects section styles */
 #projects {
     display: flex;
     align-items: center;
@@ -393,7 +357,6 @@ header {
     padding: 60px 200px; 
     text-align: center;
 }
-
 #projects .content {
     padding-top: 60px;
     max-width: 600px;
@@ -417,35 +380,31 @@ header {
         display: flex;
         justify-content: space-between;
         gap: 20px;
-        flex-wrap: wrap; /* This ensures the cards wrap to the next line on smaller screens */
+        flex-wrap: wrap; 
         margin-top: 20px;    
 }
-
 .project-card {
     position: relative;
     background-color: #c0e0f9;
     padding: 20px;
     border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* bow shadows */
     transition: transform 0.3s ease; /* Smooth transitions */
 }
-
 .project-card:hover { /* User Action Pseudo Class - based on user action */
     transform: scale(1.05); /* transform stylings */
 }
-
 .project-card > h5 { /* Child Combinator */
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
 }
-
 .project-card p {
     font-size: 1em;
     color: #666;
     margin-bottom: 15px;
 }
-
+/* styles for language label class of projects section */
 .language-label {
     position: absolute;
     bottom: 40px;
@@ -459,17 +418,14 @@ header {
     align-items: center;
     gap: 5px;
 }
-
 .language-label i {
     font-size: 1.2em;
 }
-
 .github-link {
     text-decoration: none;
     color: #333;
     font-size: 1em;
 }
-
  a[href="https://github.com/MisalSilva/w2053190_PlaneManagement"] { /*  Attribute Selectors */
     color: #2cc917; 
 }
@@ -479,7 +435,6 @@ header {
  a[href="https://github.com/MisalSilva/MediHelp-Web-Application"] { /*  Attribute Selectors */
     color: #dabb11; 
 }
-
 .github-link i {
     margin-right: 8px;
 }
@@ -490,51 +445,44 @@ header {
 
 
 
-/* General Styling for Contact Section */
+/* styles for Contact Section */
 #contact {
     padding: 90px 20px;
     background-color: #f5f5f5;
     text-align: center;
     color: #333;
 }
-
 #contact .content {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 #contact h4 {
     font-size: 2em;
     color: #004974;
     margin-bottom: 20px;
 }
-
 #contact p {
     font-size: 1.1em;
     color: #555;
     margin-bottom: 30px;
 }
-
-/* Form Styling */
+/* Contact Form Styling */
 #contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-
 .form-group label {
     font-weight: bold;
     margin-bottom: 5px;
     color: #004974;
 }
-
 .form-group input, .form-group textarea {
     padding: 10px;
     border: 1px solid #ccc; /* Border styling */
@@ -543,11 +491,9 @@ header {
     outline: none;
     transition: border-color 0.3s; /* Smooth transitions */
 }
-
 .form-group input:focus, .form-group textarea:focus {
     border-color: #004974;
 }
-
 .send-button {
     padding: 12px 20px;
     background-color: #004974;
@@ -563,12 +509,17 @@ header {
     color: #004974;
     background-color: #c0e0f9;
 }
+
+
+/* styles for go to top link */
 #gototop{
     text-align: center;
     color: #004974;
     font-size: 1.1em;    
 }
-/*footer*/
+
+
+/*styles for footer*/
 footer {
     text-align: center;
     padding: 20px;
