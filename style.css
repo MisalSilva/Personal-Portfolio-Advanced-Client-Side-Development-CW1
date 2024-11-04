@@ -5,19 +5,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -59,24 +48,10 @@ header {
 
 .navigation a:hover {
     color: #004974;
+    transform: translateX(-5px);
 }
 
-.chat-button {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 35px;
-    background: #004974;
-    border-radius: 10px;
-    border: 2px solid #004974;
-    font-weight: 500;
-    transition: .3s;
-}
 
-.chat-button:hover {
-    color: #004974;
-    background: transparent;
-    transform: translateY(-5px);
-}
 
 /* Hamburger Menu Styles */
 .menu-toggle {
@@ -92,13 +67,25 @@ header {
 
 @media (max-width: 768px) {
     header {
-        padding: 12px 20px;
+        padding: 10px 20px;
         flex-direction: column;
         align-items: flex-start;
     }
 
     .hamburger {
-        display: block;
+        display: flex;
+        position: absolute;
+        padding-left: 380px;
+        padding-top: 17px;        
+    }
+
+    .content h2{
+        padding-top: 80px;
+    }
+
+    .social-icons{
+        padding-top: 25px;
+        padding-left: 20px;
     }
 
     .navigation {
@@ -113,11 +100,7 @@ header {
     .menu-toggle:checked + .hamburger + .navigation {
         display: flex;
     }
-
-    .chat-button {
-        align-self: center;
-        margin-top: 10px;
-    }
+    
 }
 
 #home {
@@ -125,15 +108,15 @@ header {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-between; /* Ensures the content and image are spaced apart */
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 100px; /* Adjusted padding for better layout */
+    padding: 30px 100px;
     background-size: cover;
     background-position: center;
 }
 
 .content {
-    max-width: 50%; /* Adjust the width for layout */
+    max-width: 50%;
     color: #555;
     font-weight: 450;
 }
@@ -148,7 +131,7 @@ header {
 }
 
 .content h2:hover {
-    transform: translateY(-5px);    
+    transform: translateY(-5px);
 }
 
 .content h4 {
@@ -177,8 +160,9 @@ header {
 }
 
 .social-icons {
-    position: absolute;
-    bottom: 80px;
+    padding-top: 25px;
+    position: relative; /* Changed from absolute to relative */
+    margin-top: 20px; /* Added margin for spacing */
 }
 
 .social-icons a {
@@ -205,32 +189,46 @@ header {
 
 /* Image container for the home section */
 .image-container {
-    max-width: 40%; /* Adjust the width to suit your design */
-    height: 400px;  /* Fixed height to display only upper body */
-    overflow: hidden; /* Hide the rest of the image */
-    border-radius: 50%; /* Make the image circular (frame style) */
+    max-width: 40%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for the frame effect */
-    padding: -200px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added margin for spacing */
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the frame */
-    object-position: top; /* Focus on the top portion of the image (upper body and face) */
-    border-radius: 50%; /* This keeps the circular shape within the container */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items */
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+    }
 
+    .content {
+        max-width: 100%; /* Make content take full width */
+        text-align: center; /* Center text */
+    }
+
+    .image-container {
+        max-width: 60%; /* Adjust image size for better fit */
+    }
+}
 
 
 /*about section*/
 
-    
-/* General Styling */
 #about {
     padding: 90px;
     background-color: #fff;
@@ -258,7 +256,6 @@ header {
     line-height: 1.6;
 }
 
-/* About Section Styling */
 .about-section {
     margin-bottom: 40px;
 }
@@ -269,7 +266,6 @@ header {
     margin-bottom: 20px;
 }
 
-/* Tile Styling */
 .tile {
     background-color: #c0e0f9;
     color: #333;
@@ -303,10 +299,6 @@ header {
 }
 
 
-
-
-
-
 /* Skills section styling */
 #skills {
     padding: 90px ;
@@ -316,6 +308,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 #skills .content{
     padding-top: 8px;
 }
