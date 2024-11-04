@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: #c0e0f9;
+    background: linear-gradient(45deg, #85c7fa, #e7eff5); /* Gradient Stylings*/
 }
 
 .logo {
@@ -43,12 +43,12 @@ header {
     color: #555;
     text-decoration: none;
     font-weight: 500;
-    transition: .3s;
+    transition: .3s; /* Smooth transitions */
 }
-
+/* Smooth transitions */
 .navigation a:hover {
     color: #004974;
-    transform: translateX(-5px);
+    transform: translateX(-5px); /* transform stylings */
 }
 
 
@@ -113,6 +113,7 @@ header {
     padding: 30px 100px;
     background-size: cover;
     background-position: center;
+    
 }
 
 .content {
@@ -123,9 +124,9 @@ header {
 
 .content h2 {
     font-size: 3em;
-    transition: .3s;
+    transition: .3s; /* Smooth transitions */
 }
-
+/* High specificity */
 .content h2 span {
     color: #004974;
 }
@@ -147,16 +148,16 @@ header {
     text-decoration: none;
     padding: 10px 40px;
     background: #fff;
-    border-radius: 10px;
-    border: 2px solid #004974;
+    border-radius: 10px; /* Slightly rounded corners */
+    border: 2px solid #004974; /* Border styling */
     font-weight: 500;
-    transition: .3s;
+    transition: .3s; /* Smooth transitions */
 }
-
+/* Smooth transitions */
 .cv-button a:hover {
     color: #fff;
     background: #004974;
-    transform: translateX(-5px);
+    transform: translateX(-5px); /* transform stylings */
 }
 
 .social-icons {
@@ -170,17 +171,17 @@ header {
     width: 35px;
     height: 35px;
     background: #004974;
-    border-radius: 50%;
+    border-radius: 50%; /* Slightly rounded corners */
     margin-right: 22px;
     text-align: center;
     line-height: 35px;
-    border: 3px solid #fff;
+    border: 3px solid #fff; /* Border styling */
     outline: 3px solid #004974;
-    transition: .3s;
+    transition: .3s; /* Smooth transitions */
 }
-
+/* Smooth transitions */
 .social-icons a:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* transform stylings */
 }
 
 .social-icons a i {
@@ -192,7 +193,7 @@ header {
     max-width: 40%;
     height: 400px;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 50%; /* Slightly rounded corners */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +274,7 @@ header {
     padding: 20px;
     margin-bottom: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transitions */
     font-size: 1.1em;
 }
 
@@ -283,9 +284,9 @@ header {
     font-size: 0.9em;
     color: #555;
 }
-
+/* Smooth transitions */
 .tile:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* transform stylings */
 }
 
 /* Responsive Design */
@@ -312,13 +313,13 @@ header {
 #skills .content{
     padding-top: 8px;
 }
-
+/* High specificity */
 #skills .content h4 {
     font-size: 2.3em;
     margin-bottom: 10px;
     color: #004974;
 }
-
+/* High specificity */
 #skills .content p {
     font-size: 1.1em;
     color: #555;
@@ -346,7 +347,7 @@ header {
 /* Styling for the progress bar */
 .progress-bar {
     background-color: #c0e0f9;
-    border-radius: 5px;
+    border-radius: 5px; /* Slightly rounded corners */
     flex: 1;
     margin-left: 20px;
     height: 10px;
@@ -357,13 +358,13 @@ header {
 .progress {
     background-color: #004974;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 5px; /* Slightly rounded corners */
     width: 0; /* Initial width for animation */
-    transition: width 0.3s ease;
-    animation: fillProgress 2s forwards; /* Animation added */
+    transition: width 0.3s ease; /* Smooth transitions */
+    animation: fillProgress 2s forwards; /* Animation keyframes for progress bar */
 }
 
-/* Animation keyframes */
+/* Animation keyframes for progress bar */
 @keyframes fillProgress {
     from {
         width: 0;
@@ -392,13 +393,14 @@ header {
     color: #555;
     font-weight: 450;
 }
-
+/* High specificity */
 #projects .content h4 {
     color: #004974 ;
     font-size: 2em;
     text-align: center;
     margin-bottom: 10px;
 }
+/* High specificity */
 #projects .content p {
     font-size: 1.1em;
     color: #555;
@@ -416,13 +418,13 @@ header {
     position: relative;
     background-color: #c0e0f9;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px; /* Slightly rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transitions */
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* transform stylings */
 }
 
 .project-card h5 {
@@ -444,7 +446,7 @@ header {
     background-color: #004974;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 5px; /* Slightly rounded corners */
     font-size: 0.9em;
     display: flex;
     align-items: center;
@@ -464,7 +466,7 @@ header {
 .github-link i {
     margin-right: 8px;
 }
-
+/* Smooth transitions */
 .github-link:hover {
     color: #004974;
 }
@@ -516,18 +518,16 @@ header {
     color: #004974;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Slightly rounded corners */
     font-size: 1em;
     outline: none;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s; /* Smooth transitions */
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus {
     border-color: #004974;
 }
 
@@ -535,25 +535,22 @@ header {
     padding: 12px 20px;
     background-color: #004974;
     color: #fff;
-    border: none;
-    border-radius: 5px;
+    border: none; /* Border styling */
+    border-radius: 5px; /* Slightly rounded corners */
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Smooth transitions */
 }
-
+/* Smooth transitions */
 .send-button:hover {
-    background-color: #003456;
+    color: #004974;
+    background-color: #c0e0f9;
 }
-
 #gototop{
     text-align: center;
     color: #004974;
     font-size: 1.1em;    
 }
-
-
-
 /*footer*/
 footer {
     text-align: center;
@@ -561,7 +558,6 @@ footer {
     background: #f1f1f1;
     color: #555;
 }
-
 footer p {
     margin: 0;
 }
