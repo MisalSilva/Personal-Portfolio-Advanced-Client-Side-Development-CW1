@@ -41,7 +41,7 @@ header {
 .navigation a {
     font-size: 1.1em;
     color: #555;
-    text-decoration: none;
+    text-decoration: none; /* Text Effects */
     font-weight: 500;
     transition: .3s; /* Smooth transitions */
 }
@@ -150,7 +150,7 @@ header {
 
 .cv-button a {
     color: #004974;
-    text-decoration: none;
+    text-decoration: none; /* Text Effects */
     padding: 10px 40px;
     background: #fff;
     border-radius: 10px; /* Slightly rounded corners */
