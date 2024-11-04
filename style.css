@@ -46,7 +46,7 @@ header {
     transition: .3s; /* Smooth transitions */
 }
 /* Smooth transitions */
-.navigation a:hover {
+.navigation a:hover { /* User Action Pseudo Class - based on user action */
     color: #004974;
     transform: translateX(-5px); /* transform stylings */
 }
@@ -131,7 +131,7 @@ header {
     color: #004974;
 }
 
-.content h2:hover {
+.content h2:hover { /* User Action Pseudo Class - based on user action */
     transform: translateY(-5px);
 }
 
@@ -154,7 +154,7 @@ header {
     transition: .3s; /* Smooth transitions */
 }
 /* Smooth transitions */
-.cv-button a:hover {
+.cv-button a:hover { /* User Action Pseudo Class - based on user action */
     color: #fff;
     background: #004974;
     transform: translateX(-5px); /* transform stylings */
@@ -180,7 +180,7 @@ header {
     transition: .3s; /* Smooth transitions */
 }
 /* Smooth transitions */
-.social-icons a:hover {
+.social-icons a:hover { /* User Action Pseudo Class - based on user action */
     transform: translateY(-5px); /* transform stylings */
 }
 
@@ -285,7 +285,7 @@ header {
     color: #555;
 }
 /* Smooth transitions */
-.tile:hover {
+.tile:hover { /* User Action Pseudo Class - based on user action */
     transform: scale(1.05); /* transform stylings */
 }
 
@@ -423,7 +423,7 @@ header {
     transition: transform 0.3s ease; /* Smooth transitions */
 }
 
-.project-card:hover {
+.project-card:hover { /* User Action Pseudo Class - based on user action */
     transform: scale(1.05); /* transform stylings */
 }
 
@@ -467,7 +467,7 @@ header {
     margin-right: 8px;
 }
 /* Smooth transitions */
-.github-link:hover {
+.github-link:hover { /* User Action Pseudo Class - based on user action */
     color: #004974;
 }
 
@@ -542,7 +542,7 @@ header {
     transition: background-color 0.3s; /* Smooth transitions */
 }
 /* Smooth transitions */
-.send-button:hover {
+.send-button:hover { /* User Action Pseudo Class - based on user action */
     color: #004974;
     background-color: #c0e0f9;
 }
