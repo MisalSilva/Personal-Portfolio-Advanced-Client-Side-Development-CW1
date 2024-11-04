@@ -131,6 +131,11 @@ header {
     color: #004974;
 }
 
+.content h2::after { /* Pseudo Elements with Generated Content */
+    content: "👋" ;/* Adds an icon after the heading */
+    color: #004974;
+}
+
 .content h2:hover { /* User Action Pseudo Class - based on user action */
     transform: translateY(-5px);
 }
@@ -441,7 +446,7 @@ header {
 
 .language-label {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     right: 20px;
     background-color: #004974;
     color: #fff;
@@ -461,6 +466,16 @@ header {
     text-decoration: none;
     color: #333;
     font-size: 1em;
+}
+
+ a[href="https://github.com/MisalSilva/w2053190_PlaneManagement"] {
+    color: #2cc917; /* Styling LinkedIn link */
+}
+ a[href="https://github.com/MisalSilva/Progress-Outcome-Predictor"] {
+    color: #f14747; /* Styling LinkedIn link */
+}
+ a[href="https://github.com/MisalSilva/MediHelp-Web-Application"] {
+    color: #dabb11; /* Styling LinkedIn link */
 }
 
 .github-link i {
