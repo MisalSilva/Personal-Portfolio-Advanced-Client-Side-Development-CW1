@@ -125,6 +125,7 @@ header {
 .content > h2 { /* Child Combinator */
     font-size: 3em;
     transition: .3s; /* Smooth transitions */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Text Shadows */
 }
 /* High specificity */
 .content h2 span {
@@ -142,6 +143,7 @@ header {
 
 .content > h4 { /* Child Combinator */
     font-size: 2em;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Text Shadows */
 }
 
 .content > p { /* Child Combinator */
