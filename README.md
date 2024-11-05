@@ -10,7 +10,6 @@
 - A Project page where projects are dispalyed along with the GitHub Repository link and language used for those projects.
 - A Contact page where user can fill out their information and contact via email by sending a message.
   
-![Screenshot 2024-11-05 030736](https://github.com/user-attachments/assets/6a9a5ef2-e083-47d3-af78-bfb775171d65)
 
 ## **Features used**
 - Made use of Media queries in order to make the Portfolio responsive so it would display well when restored to a samller scale.
