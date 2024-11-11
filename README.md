@@ -2,13 +2,13 @@
 ## Overview
 **Developed using HTML5 and CSS3 only, this Portfolio was a coursework project under the Advanced Client Side Development Module.**
 
-![Preview](https://github.com/user-attachments/assets/42bd1d67-8fba-441d-8144-81d1735ceb93)
+<img src="https://github.com/user-attachments/assets/42bd1d67-8fba-441d-8144-81d1735ceb93" alt="Preview" width="620" height="350">
 <br>
 <br>
-<img src="https://github.com/user-attachments/assets/19f731ce-47bd-4892-96cd-81d0629c29ae" alt="Responsive Home page ss"  width="230" height="380">
-<img src="https://github.com/user-attachments/assets/94683172-7fd1-4b8a-8cd3-5b7caa708b83" alt="Responsive Skills Section ss"  width="230" height="380">
-<img src="https://github.com/user-attachments/assets/5a2f7d88-94f7-415e-ae6f-1927260bd2e2" alt="Responsive Education Section ss"  width="230" height="380">
-<img src="https://github.com/user-attachments/assets/fa126c89-ffd5-482d-93f3-aeded19c0037" alt="Responsive Contact page ss"  width="230" height="380">
+<img src="https://github.com/user-attachments/assets/19f731ce-47bd-4892-96cd-81d0629c29ae" alt="Responsive Home page ss"  width="210" height="350">
+<img src="https://github.com/user-attachments/assets/94683172-7fd1-4b8a-8cd3-5b7caa708b83" alt="Responsive Skills Section ss"  width="210" height="350">
+<img src="https://github.com/user-attachments/assets/5a2f7d88-94f7-415e-ae6f-1927260bd2e2" alt="Responsive Education Section ss"  width="210" height="350">
+<img src="https://github.com/user-attachments/assets/fa126c89-ffd5-482d-93f3-aeded19c0037" alt="Responsive Contact page ss" width="210" height="350">
 
 
 **This Portfolio consists of :** 
