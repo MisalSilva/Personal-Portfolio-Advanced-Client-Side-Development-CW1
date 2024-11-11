@@ -2,7 +2,7 @@
 ## Overview
 **Developed using HTML5 and CSS3 only, this Portfolio was a coursework project under the Advanced Client Side Development Module.**
 
-<img src="https://github.com/user-attachments/assets/42bd1d67-8fba-441d-8144-81d1735ceb93" alt="Preview" width="650" height="380">
+<img src="https://github.com/user-attachments/assets/42bd1d67-8fba-441d-8144-81d1735ceb93" alt="Preview" width="650" height="370">
 <br>
 <br>
 <img src="https://github.com/user-attachments/assets/19f731ce-47bd-4892-96cd-81d0629c29ae" alt="Responsive Home page ss"  width="200" height="340">
